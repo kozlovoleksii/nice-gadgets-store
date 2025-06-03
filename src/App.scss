@@ -136,10 +136,22 @@ img {
   height: 100%;
 }
 
-.no-hover *:hover {
-  background-color: inherit !important;
-  color: inherit !important;
-  border-color: inherit !important;
-  box-shadow: none !important;
-  cursor: default !important;
+@include mobile {
+  *:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+}
+
+@include tablet {
+  *:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+    background-color: inherit !important;
+    color: inherit !important;
+  }
 }
